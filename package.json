@@ -1,0 +1,22 @@
+{
+  "name": "cypress_training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cy:run": "cypress run --env allure=true --reporter mocha-allure-reporter",
+    "allure:generate": "npx allure generate",
+    "allure:open": "npx allure open "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "allure-commandline": "^2.28.0",
+    "cypress": "^13.6.4"
+  },
+  "dependencies": {
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}
